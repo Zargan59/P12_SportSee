@@ -1,0 +1,23 @@
+.userContent{
+    width: 100%;
+    margin: 0 100px;
+    & .helloUser{
+        margin-top: 50px;
+        height: fit-content;
+    
+        & h1{
+            font-size: 48px;
+            font-weight: 500;
+        }
+        & .username{
+            color: red;
+        }
+        .congratMessage{
+            margin-top: 25px;
+            font-size: 18px ;
+            font-weight: 400;
+        }
+    }
+}
+
+

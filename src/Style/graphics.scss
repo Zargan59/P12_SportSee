@@ -1,0 +1,92 @@
+.graphicContent{
+    display: flex;
+    max-width: 100%;
+    margin-top: 80px;
+    & .Activity_graphicContent{
+        width: 66.6%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    & .right_graphicContent{
+        // border: 2px solid blue;
+        width: 33.3%;
+    }
+}
+
+.dailyActivity_Content{
+    max-height: 320px ;
+    // min-width: 850px;
+    padding: 25px;
+    background-color: $main_Graphcolor;
+    & .dailyActivity_Title{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    & .custom-tooltip{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+
+        background-color:$secondary_GraphColor ;
+        min-width: 50px;
+        height: 80px ;
+        padding: 10px;
+        
+        font-size: 11px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+}
+.bottom_main_grapicContent{
+    display: flex;
+    height: max-content;
+    gap: 25px;
+
+    & .graphContent{
+        width: 33.3%;
+        max-height: 300px;
+        border-radius: 5px;
+    }   
+    & .sessionDuration{        
+        background-color: $secondary_GraphColor;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        // padding-bottom: 50px;
+
+        & .averageContent{
+            position: absolute;
+            height: 300px;
+            margin: 0;
+            width: 100%;
+        }
+        & h2{
+            position: relative;
+            top: 10% ;
+            left: 15%;
+            color: #FFF;
+            opacity: 50.4%;
+            font-size: 18px;
+            font-weight: 500;
+            width:160px ;
+        }
+    }
+    & .radarContent{
+        background-color:$tertiary_GraphColor ;
+        padding: 10px;
+    }
+    & .scoreContent{
+        background-color: $main_Graphcolor;
+        padding-bottom:35px;
+        & h2{
+            position: relative;
+            top: 20%;
+            left: 10%;
+            font-size: 18px;
+        }
+    }
+}

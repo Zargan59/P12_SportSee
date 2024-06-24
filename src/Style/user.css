@@ -1,0 +1,21 @@
+.userContent {
+  width: 100%;
+  margin: 0 100px;
+}
+.userContent .helloUser {
+  margin-top: 50px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.userContent .helloUser h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.userContent .helloUser .username {
+  color: red;
+}
+.userContent .helloUser .congratMessage {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}/*# sourceMappingURL=user.css.map */

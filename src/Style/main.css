@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navBarHorizontal {
+  background-color: #000;
+  display: flex;
+  height: 10vh;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.navBarHorizontal img {
+  width: 178px;
+  height: auto;
+}
+.navBarHorizontal ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.navBarVertical {
+  background-color: #000;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.navBarVertical .iconeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 80%;
+}
+.navBarVertical p {
+  color: white;
+  transform: rotate(270deg);
+  width: max-content;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.iconeBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.userContent {
+  width: 100%;
+  margin: 0 100px;
+}
+.userContent .helloUser {
+  margin-top: 50px;
+  height: fit-content;
+}
+.userContent .helloUser h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.userContent .helloUser .username {
+  color: red;
+}
+.userContent .helloUser .congratMessage {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.graphicContent {
+  display: flex;
+  max-width: 100%;
+  margin-top: 80px;
+}
+.graphicContent .Activity_graphicContent {
+  width: 66.6%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.graphicContent .right_graphicContent {
+  width: 33.3%;
+}
+
+.dailyActivity_Content {
+  max-height: 320px;
+  padding: 25px;
+  background-color: #fbfbfb;
+}
+.dailyActivity_Content .dailyActivity_Title {
+  font-size: 15px;
+  font-weight: 500;
+}
+.dailyActivity_Content .custom-tooltip {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: #FF0000;
+  min-width: 50px;
+  height: 80px;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.bottom_main_grapicContent {
+  display: flex;
+  height: max-content;
+  gap: 25px;
+}
+.bottom_main_grapicContent .graphContent {
+  width: 33.3%;
+  max-height: 300px;
+  border-radius: 5px;
+}
+.bottom_main_grapicContent .sessionDuration {
+  background-color: #FF0000;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom_main_grapicContent .sessionDuration .averageContent {
+  position: absolute;
+  height: 300px;
+  margin: 0;
+  width: 100%;
+}
+.bottom_main_grapicContent .sessionDuration h2 {
+  position: relative;
+  top: 10%;
+  left: 15%;
+  color: #FFF;
+  opacity: 50.4%;
+  font-size: 18px;
+  font-weight: 500;
+  width: 160px;
+}
+.bottom_main_grapicContent .radarContent {
+  background-color: #282D30;
+  padding: 10px;
+}
+.bottom_main_grapicContent .scoreContent {
+  background-color: #fbfbfb;
+  padding-bottom: 35px;
+}
+.bottom_main_grapicContent .scoreContent h2 {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  font-size: 18px;
+}
+
+.nutritionInfos_Content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 80px;
+}
+.nutritionInfos_Content .nutritionInfo_Content {
+  background-color: #fbfbfb;
+  height: 145px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nutritionInfos_Content .nutritionInfo_Content .nutritionInfo_IconContent {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nutritionInfos_Content .nutritionInfo_Content .nutritionInfo_DescritpionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 50px;
+  width: 150px;
+}
+.nutritionInfos_Content .nutritionInfo_Content .nutritionInfo_DescritpionContent .title {
+  font-weight: 700;
+  font-size: 20px;
+}
+.nutritionInfos_Content .nutritionInfo_Content .nutritionInfo_DescritpionContent .description {
+  font-weight: 500;
+  font-size: 14px;
+  color: #74798C;
+}
+
+@media only screen and (max-width: 1041px) {
+  .userContent {
+    margin: 0 25px;
+  }
+  .userContent .helloUser {
+    margin-top: 25px;
+  }
+  .graphicContent {
+    margin-top: 20px;
+  }
+  .dailyActivity_Content {
+    height: 260px;
+    width: 100%;
+  }
+  .bottom_main_grapicContent {
+    gap: 5px;
+  }
+  .bottom_main_grapicContent .graphContent {
+    width: 200px;
+    height: 250px;
+    font-size: 20px;
+  }
+  .bottom_main_grapicContent .sessionDuration h2 {
+    margin-bottom: 50px;
+    top: 5%;
+    left: 10%;
+  }
+  .bottom_main_grapicContent .sessionDuration .averageContent {
+    height: 250px;
+  }
+  .bottom_main_grapicContent .scoreContent h2 {
+    top: 8%;
+  }
+  .nutritionInfos_Content {
+    margin-left: 20px;
+    padding: 0;
+    gap: 10px;
+  }
+  .nutritionInfos_Content .nutritionInfo_Content {
+    width: 100%;
+    height: 125px;
+  }
+}
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 90vh;
+}
+
+body {
+  max-height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */
