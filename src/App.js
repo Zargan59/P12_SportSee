@@ -1,15 +1,17 @@
 import "./Style/main.css"
-import { BrowserRouter, Routes,Redirect, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Dashboard from "./Page/Dashboard.jsx" 
+import Error from "./Page/Error.jsx"
 
 function App() {
   
   return (
     <BrowserRouter >
 
-    <Routes path="/user/18">
+    <Routes >
       <Route path="/user/:userId" element={<Dashboard />} />
+      <Route path="*" element={<Error />} />
     </Routes>
       
     </BrowserRouter>

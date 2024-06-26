@@ -8,6 +8,13 @@ import {
   Text,
 } from "recharts";
 
+/**
+ * Show the Score of the user by using rechart
+ * 
+ * @param {number} dataUser 
+ * @returns {JSX}
+ */
+
 export default function score({ data }) {
   const scorePercent = [{ value: data * 100 }];
   return (

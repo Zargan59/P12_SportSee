@@ -1,6 +1,14 @@
 import "../../Style/main.css"
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from "recharts"
 
+/**
+ * Show the Radar activities of the user by using rechart
+ * 
+ * @param {number} dataUserPerformance.value 
+ * @param {number} dataUserPerformance.kind 
+ * @returns {JSX}
+ */
+
 export default function RadarChartPerformance({data,kind}){
     //Pour chaque données dans data
     data.forEach(element => {

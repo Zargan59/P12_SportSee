@@ -2,19 +2,26 @@
 import "../../Style/main.css"
 import { LineChart, Line, XAxis, YAxis, Legend, Tooltip, ResponsiveContainer, CartesianGrid, Rectangle  } from "recharts"
 
-export default function AverageSession({data}){
-    console.log(data);
-    let test= data 
-    test.unshift(data[0])
+/**
+ * Show the avergage session of the user by using rechart
+ * 
+ * @param {string} dataUserSession.day
+ * @param {array} dataUserSession.sessionLength
+ * 
+ * @returns {JSX}
+ */
 
-    test.push(data[data.length-1])
-    console.log("ici",test);
+
+export default function AverageSession({data}){
+    let NewDaysTab= data 
+    NewDaysTab.unshift(data[0])
+
+    NewDaysTab.push(data[data.length-1])
     const Days = ["L","L","M","M","J","V","S","D"]
-    const formattedData = test.map((session, index) => ({
+    const formattedData = NewDaysTab.map((session, index) => ({
         day: Days[index],
         sessionLength: session.sessionLength,
       }))
-      console.log("La",formattedData);
     const CustomCursor = (props) =>{
         const {points} = props
         const {x,y} = points[0]
@@ -24,7 +31,7 @@ export default function AverageSession({data}){
     }
 
  
-    const CustomTooltip = ({active, payload, label})=>{
+    const CustomTooltip = ({active, payload})=>{
         if(active && payload && payload.length){
 
             return (

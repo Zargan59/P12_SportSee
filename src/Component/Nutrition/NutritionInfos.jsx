@@ -8,6 +8,14 @@ import Lipide from "../../Asset/NutritionIcon/cheeseburger.png"
 import {USER_MAIN_DATA} from "../../Mock/Data"
 import { useState,useEffect } from "react"
 
+/**
+ * @param {number} id 
+ * @param {object} keyData 
+ * @param {number} todayScore or score   
+ * @param {object} userInfos 
+ * 
+ * @returns {JSX}
+ */
 const id = 18
 const user = USER_MAIN_DATA.find((element)=>element.id == id)
 

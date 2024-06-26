@@ -1,5 +1,15 @@
 import '../../Style/main.css'
 import { BarChart, CartesianGrid, Tooltip, Legend, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts'
+/**
+ * Show the daily activity of the user by using rechart
+ * 
+ * 
+ * @param {string} dataUserActivity.day
+ * @param {number} dataUserActivity.kilogram
+ * @param {number} dataUserActivity.calories
+ * @returns {JSX}
+
+ */
 
 export default function DailyActivity({data}){
     const redColor = '#E60000'

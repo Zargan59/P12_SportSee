@@ -2,7 +2,11 @@
     import { useState } from "react";
     const BaseUrl = "http://localhost:3000/user/"
 
-    
+    /**
+     * Call of API
+     * @param {id} id 
+     * @returns {data}
+     */
 
 
     export async function GetUserInfo(id){

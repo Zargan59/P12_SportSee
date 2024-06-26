@@ -1,5 +1,15 @@
 import "../../Style/main.css"
 
+/**
+ * 
+ * @param {string} colors Hexadecimal code
+ * @param {string} imageSource url of image
+ * @param {number} Title  
+ * @param {string} Description type of energy 
+ * 
+ * @returns {JSX}
+ */
+
 export default function NutrititonInfo({color,imageSource,Title,Description}){
     return(
         <div className="nutritionInfo_Content">

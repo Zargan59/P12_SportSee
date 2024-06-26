@@ -209,6 +209,14 @@ a {
   color: #74798C;
 }
 
+.errorContent {
+  width: fit-content;
+  margin: 20% auto;
+}
+.errorContent h2 {
+  font-size: 72px;
+}
+
 @media only screen and (max-width: 1041px) {
   .userContent {
     margin: 0 25px;
