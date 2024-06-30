@@ -1,5 +1,6 @@
     import {USER_MAIN_DATA,USER_ACTIVITY,USER_AVERAGE_SESSIONS,USER_PERFORMANCE} from "./Data"
-    import { useState } from "react";
+    import { useEffect, useState } from "react";
+    import Error from "../Page/Error"
     const BaseUrl = "http://localhost:3000/user/"
 
     /**
@@ -8,7 +9,15 @@
      * @returns {data}
      */
 
+    const APIDisable = ()=>{
+        return(
+            <Error />
+        )
+    }
 
+
+
+   
     export async function GetUserInfo(id){
         try{
             const resp = await fetch(`${BaseUrl}${id} `)
@@ -16,7 +25,7 @@
             return data.data
         }
         catch (error) {
-            console.log(error);
+            APIDisable()
         }
     }
 
@@ -27,7 +36,7 @@
             return data.data
         }
         catch(error){
-            console.log(error);
+            APIDisable()
         }
     }
 
@@ -38,7 +47,7 @@
             return data.data
         }
         catch(error){
-            console.log(error);
+            APIDisable()
         }
     }
 
@@ -49,7 +58,7 @@
             return data.data
         }
         catch(error){
-            console.log(error);
+            APIDisable()
         }
     }
 

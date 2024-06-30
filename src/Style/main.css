@@ -121,6 +121,11 @@ a {
   text-align: center;
 }
 
+.custom-tooltip_Session {
+  background-color: white;
+  padding: 5px 10px;
+}
+
 .bottom_main_grapicContent {
   display: flex;
   height: max-content;

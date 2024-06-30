@@ -51,7 +51,6 @@ function App() {
         callUserAverageSession()
     },[])        
     if(dataUser==undefined){
-        console.log("Error");
         return(
             <div>
                 <Error />

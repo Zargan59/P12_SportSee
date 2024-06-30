@@ -33,11 +33,9 @@ export default function AverageSession({data}){
  
     const CustomTooltip = ({active, payload})=>{
         if(active && payload && payload.length){
-
             return (
-                <div className="custom-tooltip">
-                  {/* <p >{`${payload[0].value}kg`}</p>
-                  <p>{`${payload[1].value}Kcal`}  </p> */}
+                <div className="custom-tooltip custom-tooltip_Session">
+                    <p>{payload[0].payload.sessionLength} min </p>
                 </div>
               );
         }
